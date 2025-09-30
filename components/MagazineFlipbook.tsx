@@ -1,7 +1,7 @@
 // components/MagazineFlipbook.tsx
 import React, { useState, useEffect } from 'react';
 import HTMLFlipBook from 'react-pageflip';
-import styles from '../styles/Magazine.module.css'; // путь скорректируй!
+import styles from '../styles/Magazine.module.css';
 
 const images = [
   '/mainpage/journal/page1.png',
@@ -15,7 +15,7 @@ const MagazineFlipbook = () => {
   const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setShowLoader(false), 1200); // короче, быстрее ;)
+    const timeout = setTimeout(() => setShowLoader(false), 1200);
     return () => clearTimeout(timeout);
   }, []);
 

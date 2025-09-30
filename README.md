@@ -1,40 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🌐 Project Name
 
-## Getting Started
+Краткое описание проекта — чем он является и для кого.  
+*(например: "Интерактивный сайт-портфолио дизайнера" или "Веб-приложение для отслеживания расходов").*
 
-First, run the development server:
+---
 
+## ✨ Особенности
+- 🎨 Современный UI/UX с акцентом на детали  
+- 📱 Полностью адаптивный дизайн  
+- ⚡️ Использует **Next.js / React / Vite / …**  
+- 🎬 Motion и анимации для живого опыта  
+- 🌀 Оптимизированная производительность  
+
+---
+
+## 🚀 Установка и запуск
 ```bash
+# 1. Клонируем репозиторий
+git clone https://github.com/username/repo-name.git
+
+cd repo-name
+
+# 2. Устанавливаем зависимости
+npm install
+
+# 3. Запускаем проект
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Проект доступен на: http://alisscart.com 🌍
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+📂 Структура проекта
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+/components   # переиспользуемые UI-компоненты
+/pages        # страницы (Next.js)
+/public       # статические файлы (изображения, иконки, шрифты)
+/styles       # глобальные и модульные стили
+/utils        # вспомогательные функции
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🛠️ Технологии
+	•	Next.js
+	•	React
+	•	Spline
+	•	Framer Motion (для анимаций)
 
-## Learn More
+🧑‍🎨 Автор
 
-To learn more about Next.js, take a look at the following resources:
+dmitrijas rustakovas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+🔗 Ссылки:
+	•	@dmitryproduction (tg channel)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.

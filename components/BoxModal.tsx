@@ -2,10 +2,10 @@ import React from "react";
 
 const telegramIcon = "/mainpage/headers/telegram.svg";
 const instagramIcon = "/mainpage/headers/instagram.svg";
-const distort = "/mainpage/Distort.png"; // твой фон
-// Если есть свои вектора — добавь их тут
+const distort = "/mainpage/Distort.png";
 
-import styles from '../styles/BoxModal.module.css'; // см. ниже, стили перепиши из твоего style.css
+
+import styles from '../styles/BoxModal.module.css';
 
 export const BoxModal: React.FC = () => (
   <div className={styles.box}>

@@ -171,9 +171,9 @@
 /* --- Мобильная адаптация до 768px --- */
 @media (max-width: 768px) {
   .box {
-    width: 90vw;           /* чуть меньше экрана */
-    max-width: 340px;      /* но не шире 340px */
-    height: 480px;         /* уменьшили высоту */
+    width: 90vw;    
+    max-width: 340px;      
+    height: 480px;        
     border-radius: 28px;
   }
 
@@ -209,7 +209,7 @@
 
   .group {
     left: 0;
-    top: 70px;           /* чуть выше */
+    top: 70px;           
     width: 100%;
     height: auto;
   }

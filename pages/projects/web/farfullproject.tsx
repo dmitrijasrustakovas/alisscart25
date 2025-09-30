@@ -34,7 +34,7 @@ const sections = [
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const [showLoader, setShowLoader] = useState(true);
-  const [loadedCount, setLoadedCount] = useState(0); // сколько картинок уже подгрузили
+  const [loadedCount, setLoadedCount] = useState(0);
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   // loader logic
@@ -58,7 +58,7 @@ export default function Home() {
             setLoadedCount((prev) => prev + 1);
             resolve(null);
           };
-          img.onerror = () => resolve(null); // чтобы не застрять
+          img.onerror = () => resolve(null); 
         });
       }
     };

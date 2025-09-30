@@ -312,7 +312,7 @@ export default function MagicBento({
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= MOBILE_BREAKPOINT);
 
-    checkMobile(); // вызвать один раз при монтировании
+    checkMobile();
     window.addEventListener("resize", checkMobile);
 
     return () => {
