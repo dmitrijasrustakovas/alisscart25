@@ -1,0 +1,30 @@
+.lanyardWrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none; /* или auto, если нужно взаимодействие */
+}
+
+.lanyardCanvasContainer {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 900px) {
+  .lanyardWrapper, .lanyardCanvasContainer {
+    height: 50vh;
+    min-height: 320px;
+    max-height: 60vw;
+  }
+}
+@media (max-width: 600px) {
+  .lanyardWrapper, .lanyardCanvasContainer {
+    height: 34vw;
+    min-height: 140px;
+    max-height: 42vw;
+  }
+}

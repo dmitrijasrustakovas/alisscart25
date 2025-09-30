@@ -1,0 +1,139 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navContainer {
+  display: flex;
+  background-color: #222;
+  border-radius: 9999px;
+  overflow: hidden;
+      /* ещё более размытие */
+  transition: box-shadow 0.3s ease;
+}
+
+.navContainer {
+  background: rgba(255, 255, 255, 0.1);       /* полупрозрачный стеклянный фон */
+  backdrop-filter: blur(20px) saturate(180%);   /* размытие + усиление цвета позади */
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.37),             /* мягкая тень вокруг */
+    0 0 0 1px rgba(255, 255, 255, 0.18);         /* тонкая светлая обводка */
+}
+
+.avatar {
+  background-color: #090a07;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.navItem {
+  padding: 10px 20px;
+  margin: 0 4px;
+  border-radius: 9999px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.navItem:hover {
+  background-color: #444;
+}
+
+.active {
+  background-color: #555;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { background-color: #555; }
+  50% { background-color: #666; }
+  100% { background-color: #555; }
+}
+
+.contactButton {
+  background-color: #111;
+  color: #e53935;
+  font-weight: bold;
+  padding: 10px 24px;
+  margin-left: 12px;
+  border-radius: 9999px;
+  border: 2px solid #e53935;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contactButton:hover {
+  background-color: #e53935;
+  color: black;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+  position: fixed;
+  bottom: 28px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.navContainer {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 9999px;
+  overflow: hidden;
+
+}
+
+.avatar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navItems {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 6px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+
+.navItem {
+  font-size: 14px;
+  padding: 8px 14px;
+  white-space: nowrap;
+}
+
+.contactButton {
+  flex-shrink: 0;
+  font-size: 14px;
+  padding: 8px 12px;
+  white-space: nowrap;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+}

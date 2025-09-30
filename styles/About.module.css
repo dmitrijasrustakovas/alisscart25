@@ -1,0 +1,95 @@
+.main {
+  min-height: 100vh;
+  background: #0d0d0d;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+  min-height: 80vh;
+  position: relative;
+}
+
+.textBlock {
+  max-width: 80vw;
+  margin-top: 20vh;
+  z-index: 2;
+}
+
+.title {
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 22px;
+}
+
+.desc {
+  font-size: 1.2rem;
+  color: #d0d0d0;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
+.lanyardOverlay {
+  /* Центрирование и адаптив для Lanyard */
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+@media (max-width: 600px) {
+  .main {
+    min-height: 100vh;
+    padding: 0;
+  }
+  .contentWrapper {
+    min-height: auto;
+    gap: 12px;
+    padding: 0 8px;
+  }
+  .textBlock {
+    max-width: 100%;
+    margin-top: 28vw; 
+    padding: 0 4vw;
+  }
+  .title {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+  .desc {
+    font-size: 0.97rem;
+    line-height: 1.6;
+    text-align: center;
+    padding-bottom: 12vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .lanyardOverlay {
+    height: 60vh;
+    min-height: 340px;
+    max-height: 68vw;
+    top: 0;
+  }
+}
+@media (max-width: 600px) {
+  .lanyardOverlay {
+    height: 38vw;
+    min-height: 180px;
+    max-height: 48vw;
+    top: 0;
+  }
+}

@@ -1,0 +1,252 @@
+.animationsMain {
+  position: relative;
+  background-color: black;
+  background-image: url('/mainpage/hero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0; 
+  overflow: hidden;
+}
+
+.animationsMain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); 
+  z-index: 1;
+  pointer-events: none;
+}
+
+.windowContainer {
+  position: relative;
+  z-index: 2; 
+  width: 100%;
+  max-width: 1024px;
+  padding: 0px;
+}
+
+.grid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  gap: 10px;
+}
+
+.card img {
+  width: 220px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.sectionTitle {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.folderIcon {
+  width: 48px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.labelAccent {
+  color: #888;
+}
+
+@media (max-width: 768px) {
+    .animationsMain {
+        padding-top: 60px;
+        
+    }
+
+    .windowContainer {
+      padding: 12px;
+    }
+}
+
+
+.videoSection {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.sectionTitle {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.folderIcon {
+  width: 48px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.labelAccent {
+  color: #888;
+}
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;
+}
+
+.videoContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.videoContainer.short {
+  padding-bottom: 177.78%; /* 9:16 */
+}
+
+.detailsLink {
+  display: inline-block;
+  margin-top: 12px;
+  color: #fff;
+  font-size: 14px;
+  transition: opacity 0.3s ease;
+}
+
+.detailsLink:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .videoSection {
+    margin-bottom: 24px;
+  }
+  .sectionTitle {
+    font-size: 18px;
+    text-align: center;
+  }
+  .videoContainer {
+    border-radius: 8px;
+  }
+  .detailsLink {
+    font-size: 16px;
+  }
+}
+
+.textSection {
+  margin-bottom: 32px;
+  color: white;
+}
+.textSection .sectionTitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.textSection p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.videoSection {
+  margin-bottom: 40px;
+}
+.videoTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 12px;
+  text-align: left;
+}
+.youtubeEmbed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;
+}
+.youtubeEmbed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.imageSection {
+  margin-top: 40px;
+  text-align: center;
+}
+.imageSection .image {
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .textSection .sectionTitle {
+    font-size: 20px;
+    text-align: center;
+  }
+  .textSection p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .videoTitle {
+    text-align: center;
+  }
+  .youtubeEmbed {
+    border-radius: 8px;
+  }
+  .imageSection .image {
+    border-radius: 8px;
+  }
+}
+
+.spotifySection {
+  width: 100%;
+  margin: 0 auto 38px auto;
+  display: block;
+}
+.spotifySection iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 152px;
+  border-radius: 16px;
+  background: #18181c;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.16);
+  display: block;
+}

@@ -1,0 +1,73 @@
+.pageWrapper {
+  background-color: black;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1024px;
+  position: relative;
+}
+
+.note {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 0.6;
+  white-space: nowrap;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.hide {
+  opacity: 0;
+  transform: translateX(-20px);
+  pointer-events: none;
+}
+
+.book {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .note {
+    display: none;
+  }
+
+  .book {
+    width: 90vw !important;
+    height: auto !important;
+    margin-top: -20px; /* ⬅️ Поднимаем выше */
+  }
+}

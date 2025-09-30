@@ -1,0 +1,477 @@
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 0.6s ease 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.mainHidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.mainVisible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+.hero {
+  width: 100%;
+  background-color: black;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.animationsSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.videoBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.animationsContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px;
+  height: 100%;
+  color: white;
+}
+
+.headerGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 👈 вот это магия */
+  width: 100%;
+}
+
+.animationsTitle {
+  height: 180px; 
+  display: block;
+}
+
+.headerRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Helvetica Now Display", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 1.4;
+  gap: 10px;
+  text-align: right;
+  color: white;
+}
+
+.descriptionBlock {
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+  max-width: 600px;
+  text-align: right;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: lighter;
+  color: white;
+}
+
+
+
+.albumSection {
+  background-color: black;
+}
+
+.albumHeaderGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 80px;
+}
+
+.albumTitle {
+  height: 180px;
+  display: block;
+}
+
+.albumContentWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 0 80px 80px;
+  flex-wrap: wrap;
+}
+
+.albumLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 800px;
+}
+
+.albumGrid {
+  display: flex;
+  gap: 60px;
+}
+
+.albumItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.albumItem img {
+  max-width: 450px;
+  border-radius: 10px;
+}
+
+.caption {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.albumDescriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.descriptionLine {
+  display: flex;
+  gap: 20px;
+}
+
+.index {
+  font-weight: 400;
+  color: #999;
+  min-width: 24px;
+}
+
+.albumRight {
+  flex-shrink: 0;
+}
+
+.spotify {
+  max-height: 1220px;
+  height: auto;
+  width: auto;
+}
+
+
+.magazineSection {
+  padding: 100px clamp(20px, 5vw, 80px);
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background: black;
+}
+
+.magazineHeaderGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.magazineTitle {
+  height: 180px;
+  max-width: 80%;
+}
+
+.magazineImageWrapper {
+  width: 100%;
+}
+
+.magazineImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.web3Section {
+  padding: 100px clamp(20px, 5vw, 80px);
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background: black;
+}
+
+.web3HeaderGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.web3Title {
+  width: 500px;
+  max-width: 80%;
+}
+
+.web3Content {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.laptopBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.laptopBlock img {
+  max-width: 50%;
+  height: auto;
+}
+
+.textRight {
+  max-width: 600px;
+  color: #ccc;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.mobileBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.mobileBlock img {
+  max-width: 900px;
+  height: auto;
+}
+
+.textLeft {
+  max-width: 400px;
+  color: #ccc;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.contactSection {
+  background: black;
+  padding: 100px clamp(20px, 5vw, 80px);
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contactTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.contactTitle .script {
+  font-family: 'YourFancyScriptFont', serif;
+  font-style: italic;
+}
+
+.contactInfo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 26px;
+  color: #ccc;
+  padding: 40px 0;
+}
+
+.contactInfo a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contactInfo a:hover {
+  color: #e53935;
+}
+
+
+.contactLeft,
+.contactCenter,
+.contactRight {
+  position: absolute;
+  white-space: nowrap;
+}
+
+.contactLeft {
+  left: 0;
+}
+
+.contactCenter {
+  position: relative;
+  text-align: center;
+}
+
+.contactRight {
+  right: 0;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socialIcons img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(1.2);
+  transition: transform 0.2s ease;
+}
+
+.socialIcons img:hover {
+  transform: scale(1.15);
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .animationsContent,
+  .albumHeaderGroup,
+  .albumContentWrapper,
+  .magazineSection,
+  .web3Section {
+    padding: 20px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+   .contactSection {
+    align-items: center;
+   }
+
+  .animationsSection {
+    height: 26vh;
+  }
+
+  .animationsTitle,
+  .albumTitle,
+  .magazineTitle,
+  .web3Title,
+  .contactTitle {
+    height: auto !important;
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .headerRight {
+    display: none;
+  }
+
+  .descriptionBlock {
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .albumGrid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .albumItem img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .albumDescriptions {
+    font-size: 18px;
+  }
+
+  .spotify {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .web3Content {
+    gap: 40px;
+  }
+
+  .laptopBlock{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mobileBlock {
+    display: none;
+  }
+
+  .laptopBlock img,
+  .mobileBlock img {
+    max-width: 100%;
+  }
+
+  .textRight,
+  .textLeft {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .contactInfo {
+    flex-direction: column;
+    gap: 16px;
+    font-size: 20px;
+  }
+
+  .contactLeft,
+  .contactCenter,
+  .contactRight {
+    position: static;
+    text-align: center;
+  }
+
+  .socialIcons img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
