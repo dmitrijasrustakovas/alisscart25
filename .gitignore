@@ -43,14 +43,6 @@ next-env.d.ts
 # === Игнорим всё в public ===
 /public/*
 
-# === Но оставляем файлы, которые нужны для работы сайта ===
-!/public/*.png
-!/public/*.jpg
-!/public/*.jpeg
-!/public/*.webp
-!/public/*.svg
-!/public/*.ico
-!/public/favicon.*
 
 # Архивы
 *.zip
