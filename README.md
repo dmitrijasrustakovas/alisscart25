@@ -48,7 +48,7 @@ npm run dev
 dmitrijas rustakovas
 
 🔗 Ссылки:
-	•	@dmitryproduction (tg channel)
+	•	@dmitrijasrustakovas (tg channel)
 
 
 
