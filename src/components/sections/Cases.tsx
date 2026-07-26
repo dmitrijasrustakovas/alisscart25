@@ -77,42 +77,42 @@ export default function Cases() {
           ))}
         </div>
 
-        <motion.h3
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.6 }}
-          className="mt-24 mb-10 text-4xl font-medium text-ink"
-        >
-          Ещё немного кейсов
-        </motion.h3>
+        <div className="mt-24 grid gap-8 md:grid-cols-[280px_1fr] md:gap-16">
+          <motion.h3
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl font-medium text-ink"
+          >
+            Ещё немного кейсов
+          </motion.h3>
 
-        <div className="divide-y divide-line border-t border-b border-line">
-          {MORE.map((item) => (
-            <div
-              key={item.name}
-              data-cursor-hover
-              className="flex flex-col gap-2 py-5 transition-colors hover:bg-ink/[0.03] sm:flex-row sm:items-center sm:justify-between sm:px-2"
-            >
-              <div className="flex items-center gap-4">
-                <div className="h-10 w-10 shrink-0 rounded-md bg-gradient-to-br from-ink/10 to-ink/20" />
-                <div>
+          <div>
+            {MORE.map((item) => (
+              <div
+                key={item.name}
+                data-cursor-hover
+                className="flex flex-wrap items-center gap-x-6 gap-y-3 border-b border-line py-4 transition-colors hover:bg-ink/[0.03] first:border-t"
+              >
+                <div className="h-14 w-14 shrink-0 rounded-lg bg-gradient-to-br from-ink/10 to-ink/20" />
+                <div className="w-56 shrink-0">
                   <p className="font-medium text-ink">{item.name}</p>
                   <p className="text-sm text-ink-muted">{item.description}</p>
                 </div>
+                <div className="flex flex-wrap gap-2">
+                  {item.pills.map((pill) => (
+                    <span
+                      key={pill}
+                      className="rounded-full bg-ink/5 px-3 py-1 text-[11px] uppercase tracking-wide text-ink-muted"
+                    >
+                      {pill}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <div className="flex flex-wrap gap-2 pl-14 sm:pl-0">
-                {item.pills.map((pill) => (
-                  <span
-                    key={pill}
-                    className="rounded-full bg-ink/5 px-3 py-1 text-[11px] uppercase tracking-wide text-ink-muted"
-                  >
-                    {pill}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
