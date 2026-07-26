@@ -5,6 +5,12 @@
   --foreground: #f2f2f0;
   --muted: #8a8a8f;
   --accent: #d8ff3e;
+
+  --surface: #f7f6f2;
+  --surface-alt: #ffffff;
+  --ink: #242424;
+  --ink-muted: #6f6f6f;
+  --line: rgba(36, 36, 36, 0.12);
 }
 
 @theme inline {
@@ -12,6 +18,11 @@
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-accent: var(--accent);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-line: var(--line);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -29,4 +40,26 @@ body {
 .text-outline {
   -webkit-text-stroke: 1px var(--foreground);
   color: transparent;
+}
+
+/* Sections that sit on the light surface from the Figma design */
+.section-light {
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.section-light-alt {
+  background: var(--surface-alt);
+  color: var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -6,10 +6,10 @@ import { usePathname } from "next/navigation";
 import clsx from "clsx";
 
 const LINKS = [
-  { href: "/", label: "Main" },
-  { href: "/projects", label: "Projects" },
-  { href: "/shop", label: "Shop" },
-  { href: "/about", label: "About" },
+  { href: "#services", label: "Услуги" },
+  { href: "#cases", label: "Кейсы" },
+  { href: "#about", label: "О нас" },
+  { href: "#contact", label: "Контакты" },
 ];
 
 export default function Nav() {

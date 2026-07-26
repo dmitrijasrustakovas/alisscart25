@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import CustomCursor from "@/components/CustomCursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "alisscart",
+  title: "alisscart — дизайн-студия",
   description:
-    "alisscart — 3D artworks, motion design, film & editing, editorial and web development.",
+    "Alisscart — выводим дизайн цифровых продуктов на новый уровень. Дизайн интерфейсов, айдентика, исследования, разработка.",
   icons: {
     icon: "/favicon.png",
   },
@@ -34,6 +35,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <CustomCursor />
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
